@@ -1,0 +1,37 @@
+# Functional Programming Task
+
+# Normal Function
+def add(a, b):
+    return a + b
+
+# Function with *args
+def total_sum(*numbers):
+    return sum(numbers)
+
+# Function with **kwargs
+def student_info(**data):
+    for key, value in data.items():
+        print(key, ":", value)
+
+# Lambda Function
+square = lambda x: x * x
+
+# Global Variable
+message = "Welcome to Functional Programming"
+
+def display():
+    # Local Variable
+    local_msg = "Inside Function"
+    print(local_msg)
+    print(message)
+
+# Function Calls
+print("Addition:", add(10, 20))
+
+print("Total Sum:", total_sum(1,2,3,4,5))
+
+student_info(name="Susmitha", branch="ECE", year=4)
+
+print("Square:", square(6))
+
+display()
